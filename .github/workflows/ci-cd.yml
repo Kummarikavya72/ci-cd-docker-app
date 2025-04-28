@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Bulid and Push Docker Image
-        uses: docker/bulid-push-action@v5
+        uses: docker/build-push-action@v5
         with:
           context:
           file: ./Dockerfile
